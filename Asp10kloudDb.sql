@@ -193,7 +193,8 @@ ALTER TABLE public.alarm OWNER TO bolzan;
 CREATE TABLE public.alarm_history (
     alarm_id integer NOT NULL,
     data date,
-    description character varying(1000)
+    description character varying(1000),
+    resolved boolean
 );
 
 
